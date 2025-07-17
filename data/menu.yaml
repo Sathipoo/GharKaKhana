@@ -1,0 +1,244 @@
+restaurant_info:
+  name: "Ghar ka Khana"
+  tagline: "Your Home-style Cloud Kitchen"
+  location: "Brigade Gateway, Bangalore"
+  delivery_radius_km: 5
+  contact:
+    phone: "+91-9876543210"
+    email: "orders@gharkaakhana.com"
+    whatsapp: "+91-9876543210"
+
+delivery_zones:
+  brigade_gateway:
+    name: "Brigade Gateway"
+    delivery_charge: 0
+    coordinates:
+      lat: 12.9716
+      lng: 77.5946
+  other_areas:
+    name: "Other Areas (within 5km)"
+    delivery_charge: 30
+
+time_slots:
+  breakfast:
+    start: "08:00"
+    end: "11:00"
+    order_cutoff: "10:30"
+  lunch:
+    start: "12:00"
+    end: "15:00"
+    order_cutoff: "14:30"
+  dinner:
+    start: "19:00"
+    end: "22:00"
+    order_cutoff: "21:30"
+
+menu:
+  breakfast:
+    - id: "bf001"
+      name: "Poha with Sev"
+      description: "Traditional flattened rice with onions, tomatoes, and crunchy sev"
+      price: 60
+      category: "breakfast"
+      tags: ["vegetarian", "light", "maharashtrian"]
+      prep_time: 15
+      available: true
+      image: "/images/poha.jpg"
+      
+    - id: "bf002"
+      name: "Upma"
+      description: "South Indian semolina dish with vegetables and curry leaves"
+      price: 50
+      category: "breakfast"
+      tags: ["vegetarian", "south_indian", "healthy"]
+      prep_time: 12
+      available: true
+      image: "/images/upma.jpg"
+      
+    - id: "bf003"
+      name: "Aloo Paratha with Curd"
+      description: "Stuffed potato flatbread served with fresh yogurt and pickle"
+      price: 80
+      category: "breakfast"
+      tags: ["vegetarian", "north_indian", "filling"]
+      prep_time: 20
+      available: true
+      image: "/images/aloo_paratha.jpg"
+      
+    - id: "bf004"
+      name: "Masala Dosa"
+      description: "Crispy rice crepe with spiced potato filling, served with sambar and chutney"
+      price: 90
+      category: "breakfast"
+      tags: ["vegetarian", "south_indian", "popular"]
+      prep_time: 18
+      available: true
+      image: "/images/masala_dosa.jpg"
+
+  lunch_dinner:
+    - id: "ld001"
+      name: "Dal Chawal Combo"
+      description: "Home-style yellow dal with steamed rice, pickle, and papad"
+      price: 120
+      category: "lunch_dinner"
+      tags: ["vegetarian", "comfort_food", "healthy"]
+      prep_time: 25
+      available: true
+      image: "/images/dal_chawal.jpg"
+      
+    - id: "ld002"
+      name: "Rajma Rice"
+      description: "Kidney bean curry with basmati rice and onion salad"
+      price: 140
+      category: "lunch_dinner"
+      tags: ["vegetarian", "north_indian", "protein_rich"]
+      prep_time: 30
+      available: true
+      image: "/images/rajma_rice.jpg"
+      
+    - id: "ld003"
+      name: "Chicken Curry with Rice"
+      description: "Home-style chicken curry with aromatic spices, served with rice"
+      price: 180
+      category: "lunch_dinner"
+      tags: ["non_vegetarian", "popular", "spicy"]
+      prep_time: 35
+      available: true
+      image: "/images/chicken_curry.jpg"
+      
+    - id: "ld004"
+      name: "Palak Paneer with Roti"
+      description: "Spinach curry with cottage cheese, served with 3 rotis"
+      price: 160
+      category: "lunch_dinner"
+      tags: ["vegetarian", "healthy", "iron_rich"]
+      prep_time: 25
+      available: true
+      image: "/images/palak_paneer.jpg"
+      
+    - id: "ld005"
+      name: "Biryani (Veg/Chicken)"
+      description: "Aromatic basmati rice with vegetables or chicken, served with raita"
+      price: 200
+      category: "lunch_dinner"
+      tags: ["special", "aromatic", "filling"]
+      prep_time: 40
+      available: true
+      image: "/images/biryani.jpg"
+
+  snacks:
+    - id: "sn001"
+      name: "Samosa (2 pcs)"
+      description: "Crispy pastry filled with spiced potatoes, served with chutneys"
+      price: 40
+      category: "snacks"
+      tags: ["vegetarian", "crispy", "popular"]
+      prep_time: 10
+      available: true
+      image: "/images/samosa.jpg"
+      
+    - id: "sn002"
+      name: "Pakora Plate"
+      description: "Mixed vegetable fritters with mint and tamarind chutney"
+      price: 60
+      category: "snacks"
+      tags: ["vegetarian", "crispy", "monsoon_special"]
+      prep_time: 15
+      available: true
+      image: "/images/pakora.jpg"
+      
+    - id: "sn003"
+      name: "Sandwich (Grilled)"
+      description: "Grilled vegetable sandwich with cheese and green chutney"
+      price: 70
+      category: "snacks"
+      tags: ["vegetarian", "quick", "cheesy"]
+      prep_time: 12
+      available: true
+      image: "/images/sandwich.jpg"
+
+  salads:
+    - id: "sl001"
+      name: "Mixed Vegetable Salad"
+      description: "Fresh cucumber, tomato, onion, and carrot with lemon dressing"
+      price: 50
+      category: "salads"
+      tags: ["vegetarian", "healthy", "fresh"]
+      prep_time: 8
+      available: true
+      image: "/images/mixed_salad.jpg"
+      
+    - id: "sl002"
+      name: "Sprouts Salad"
+      description: "Mixed sprouts with onions, tomatoes, and tangy dressing"
+      price: 60
+      category: "salads"
+      tags: ["vegetarian", "protein_rich", "healthy"]
+      prep_time: 10
+      available: true
+      image: "/images/sprouts_salad.jpg"
+
+  beverages:
+    - id: "bv001"
+      name: "Masala Chai"
+      description: "Traditional Indian tea with aromatic spices"
+      price: 20
+      category: "beverages"
+      tags: ["vegetarian", "hot", "traditional"]
+      prep_time: 5
+      available: true
+      image: "/images/masala_chai.jpg"
+      
+    - id: "bv002"
+      name: "Fresh Lime Water"
+      description: "Refreshing lime water with mint and black salt"
+      price: 30
+      category: "beverages"
+      tags: ["vegetarian", "fresh", "cooling"]
+      prep_time: 3
+      available: true
+      image: "/images/lime_water.jpg"
+      
+    - id: "bv003"
+      name: "Lassi (Sweet/Salt)"
+      description: "Traditional yogurt drink - sweet or salted"
+      price: 40
+      category: "beverages"
+      tags: ["vegetarian", "cooling", "traditional"]
+      prep_time: 5
+      available: true
+      image: "/images/lassi.jpg"
+      
+    - id: "bv004"
+      name: "Filter Coffee"
+      description: "South Indian style filter coffee"
+      price: 25
+      category: "beverages"
+      tags: ["vegetarian", "hot", "south_indian"]
+      prep_time: 5
+      available: true
+      image: "/images/filter_coffee.jpg"
+
+dietary_tags:
+  vegetarian: "Vegetarian"
+  non_vegetarian: "Non-Vegetarian"
+  vegan: "Vegan"
+  jain: "Jain"
+  healthy: "Healthy Choice"
+  protein_rich: "High Protein"
+  low_calorie: "Low Calorie"
+  spicy: "Spicy"
+  mild: "Mild"
+
+special_offers:
+  - id: "combo1"
+    name: "Lunch Combo"
+    description: "Any main course + beverage + salad"
+    discount_percent: 15
+    valid_until: "2024-12-31"
+    
+  - id: "brigade_special"
+    name: "Brigade Gateway Special"
+    description: "Free delivery for Brigade Gateway residents"
+    discount_type: "free_delivery"
+    valid_until: "2024-12-31"
